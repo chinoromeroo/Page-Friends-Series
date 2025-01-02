@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.R.I.E.N.D.S</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17d6482aac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/FiendsLogo.png" alt="Logo Friends"> 
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li class="temp"">
+                    <a href="temporadas.html">Temporadas</a>
+                    <ul class="submenu">
+                        <li><a href="temporadas.html#Temporada1">Temp 1</a></li>
+                        <li><a href="temporadas.html#Temporada2">Temp 2</a></li>
+                        <li><a href="temporadas.html#Temporada3">Temp 3</a></li>
+                        <li><a href="temporadas.html#Temporada4">Temp 4</a></li>
+                        <li><a href="temporadas.html#Temporada5">Temp 5</a></li>
+                        <li><a href="temporadas.html#Temporada6">Temp 6</a></li>
+                        <li><a href="temporadas.html#Temporada7">Temp 7</a></li>
+                        <li><a href="temporadas.html#Temporada8">Temp 8</a></li>
+                        <li><a href="temporadas.html#Temporada9">Temp 9</a></li>
+                        <li><a href="temporadas.html#Temporada10">Temp 10</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>F.R.I.E.N.D.S</h1>
+    <img id="image-index" src="images/portada.jpg" alt="Protagonistas tomando un licuado">
+    
+    <article>
+        <p><strong>F.R.I.E.N.D.S</strong> es una serie de televisión estadounidense que se emitió desde 1994 hasta 2004, creada y producida por Marta Kauffman y David Crane</p>
+        <p>La serie en cuestión trata de seis amigos treintañeros que viven en Nueva York. Juntos afrontan con humor las dificultades propias de su edad: líos amorosos, trabajo, familia y su propia convivencia. </p>
+    </article>
+    
+    <article>
+        <h2>Temporadas</h2>
+        <p>La serie tiene un total de 10 temporadas, y contiene 237 episodios.</p>
+    </article>
+
+    <article>
+        <h2>Personajes Principales</h2>
+        <p>Los protagonistas son Rachel (Jennifer Aniston), Monica (Courteney Cox), Phoebe (Lisa Kudrow), Joey (Matt LeBlanc), Chandler (Matthew Perry) y Ross (David Schwimmer).</p>
+    </article>
+
+    <article>
+        <h2>Personajes Secundarios</h2>
+        <p>Algunos personajes secundarios que se merecen una mencion son Janice (Maggie Wheeler), Gunther (James Michael Tyler), Sr. Heckles (Larrry Hankin), Jack Geller (Eliot Gould), Carol (Jane Sibbett), entre otros.</p>
+    </article>
+    
+    <footer>
+        <div>
+            <a id="facebook" href="https://www.facebook.com/friends.tv/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a id="twitter" href="https://twitter.com/FriendsTV" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a id="instagram" href="https://www.instagram.com/friends/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a id="youtube" href="https://www.youtube.com/@Friends" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p>© 2023 Valentin Romero - UTN FRH</p>
+    </footer>
+
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+</body>
+</html>

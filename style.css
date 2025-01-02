@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+}
+/*--------------------INDEX--------------------*/
+/* NAV-BAR */
+header{
+    background-color: #333;
+	padding: 1.5rem 2rem;
+	display: flex;
+	align-items: center;
+}
+
+header div {
+    flex: 0 0 auto;
+    background-color: #333;
+    box-shadow: none;
+}
+
+header div img{
+    width: 120px;
+}
+
+.icon{display: none;}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    color: white;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+.menu{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    height: 100%;
+}
+
+.menu .temp .submenu{
+    display: none;
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0;
+    background-color: #292929;
+    width: 140px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 0;
+}
+
+.submenu li a{font-size: 15px; padding: 0.5rem 1rem; color: white;}
+
+.temp:hover .submenu{
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #ff4500; 
+}
+article {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #ff4500; 
+}
+
+#image-index{
+    max-width: 55%; 
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin: 0 auto; 
+    display: block;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #333;
+    box-shadow: none;
+}
+
+footer div a{
+    color: white;
+    font-size: 2rem;
+	max-width: 2.5rem;
+	width: 100%;
+	height: auto;
+	margin-right: 3%;
+    transition: 300ms;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-right: 50px;
+}
+
+#facebook:hover{
+    color: #3b5998;
+}
+
+#twitter:hover{
+    color: #00acee;
+}
+
+#instagram:hover{
+    color: #9228cf;
+}
+
+#youtube:hover{
+    color: #c4302b;   
+}
+/*-------------- PERSONAJES PRINCIPALES ---------------*/
+.protagonistas {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las dos columnas */
+    flex-wrap: wrap; /* Permite que los artículos se ajusten en pantallas más pequeñas */
+}
+
+.protagonistas article {
+    background-color: white;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px; 
+    padding: 15px; 
+    width: calc(45% - 20px); /* Ancho de los artículos, ajustado para el espaciado */
+    text-align: center; 
+}
+
+.protagonistas article img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.protagonistas article img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+.protagonistas p {
+    line-height: 1.5;
+    text-align: left;
+}
+/*--------------------TEMPORADAS---------------------*/
+.temporadas article {
+    background-color: white; 
+    border-radius: 8px;
+    margin: 20px 0; 
+    padding: 15px; 
+    text-align: center;
+}
+
+.temporadas article div {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.temporadas article img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del artículo */
+    height: auto; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+}
+
+.temporadas p {
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    text-align: left;
+}
+/*----------------------------------GALERIA--------------------------------*/
+.galeria {
+    display: flex; 
+    flex-wrap: wrap; /* Permitir que las imágenes se ajusten en varias filas */
+    justify-content: center; 
+    gap: 15px; /* Espaciado entre las imágenes */
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+.galeria a {
+    display: block; /* Mostrar como bloque para que ocupe todo el espacio */
+    border-radius: 8px; 
+    overflow: hidden; /* Ocultar el desbordamiento */
+    transition: transform 0.3s; 
+}
+
+.galeria a:hover {
+    transform: scale(1.05); 
+}
+
+.galeria img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+}
+
+/*---------------------------------CONTACTO------------------------------------------*/
+.contenedorContacto {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.formulario {
+    flex: 1; 
+    margin-right: 20px;
+    margin-top: 35px; 
+    margin-bottom: 35px;
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px;
+    padding: 20px; 
+}
+
+.imagenContacto {
+    flex: 1; 
+    text-align: center; 
+}
+
+.imagenContacto img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+    height: 585px;
+}
+
+.formGrupo {
+    margin-bottom: 15px; 
+}
+
+.inputForm {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    transition: border-color 0.3s; 
+}
+
+.inputForm:focus {
+    border-color: #ff4500; 
+}
+
+.labelForm {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+.botonesForm {
+    background-color: #ff4500; 
+    color: white;
+    border: none;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.botonesForm:hover {
+    background-color: #e03e00; 
+}
